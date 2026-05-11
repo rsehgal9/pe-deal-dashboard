@@ -176,6 +176,3 @@ Designed for:
 Real-time transaction comparables
  ```bash
    pip install -r requirements.txt
-
-   
-   
