@@ -2,8 +2,7 @@
 
 ## PE Deal Dashboard  
 Private equity deal analysis, portfolio intelligence, and interactive LBO modeling — built for rapid investment evaluation.
-
-Live Demo Coming Soon · Streamlit-Based Financial Analysis Platform
+ · Streamlit-Based Financial Analysis Platform
 
 ---
 
