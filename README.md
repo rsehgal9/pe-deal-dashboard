@@ -1,102 +1,127 @@
-# Private Equity Deal Dashboard (Mini LBO)
+PE Deal Dashboard
+PE Deal Dashboard
 
-## Overview
+Private equity deal analysis, portfolio intelligence, and interactive LBO modeling — built for rapid investment evaluation.
 
-This project is an interactive dashboard designed to simulate how private equity investors **screen and evaluate potential acquisition targets**.
+Live Demo Coming Soon · Streamlit-Based Financial Analysis Platform
 
-Instead of looking at companies one-by-one, the tool allows users to:
-- Filter and compare multiple businesses
-- Identify the most attractive investment opportunities
-- Estimate potential returns using a simplified deal model
+What it does
 
-The goal is to replicate the **early-stage investment process** used by private equity firms.
+Interactive private equity analysis platform focused on deal evaluation, financial modeling, and investment screening.
 
----
+Core Features
+Upload and analyze company financials instantly
+Interactive LBO modeling with adjustable assumptions
+IRR, MOIC, leverage, and return sensitivity analysis
+Deal pipeline and acquisition target tracking
+EBITDA multiple benchmarking and valuation comparison
+Scenario modeling across recession/base/upside cases
+KPI dashboards for portfolio company monitoring
+Automated investment memo and summary generation
+Financial visualization with dynamic charts and tables
+Market and comparable company analysis integration
+Planned Advanced Features
+AI-assisted investment thesis generation
+Monte Carlo simulation for deal outcomes
+Debt waterfall modeling
+Portfolio risk exposure analysis
+NLP extraction from CIMs and filings
+Real-time market data integration
+Automated comparable transaction scraping
+Credit metrics and covenant monitoring
+Quick Start
+git clone https://github.com/yourusername/pedealdashboard
+cd pedealdashboard
 
-## What This Tool Does
+pip install -r requirements.txt
 
-### 1. Screens Companies Based on Key Metrics
-Users can filter companies using important investment criteria such as:
-- Revenue growth
-- Profitability (EBITDA margin)
-- Valuation (EV / EBITDA)
-- Leverage (Debt / EBITDA)
+streamlit run app.py
 
-This helps narrow a large set of companies into a smaller group of high-potential targets.
+Open browser:
 
----
+http://localhost:8501
+Tech Stack
+Frontend
+Streamlit
+Plotly
+HTML/CSS Components
+Backend & Analytics
+Python
+Pandas
+NumPy
+SciPy
+Scikit-learn
+Financial Modeling
+DCF Engine
+LBO Modeling Logic
+Sensitivity Tables
+Capital Structure Analysis
+Data Sources
+SEC/EDGAR Filings
+Yahoo Finance APIs
+Financial statement uploads
+Custom transaction datasets
+Example Metrics
+Investment Returns
+Internal Rate of Return (IRR)
+Multiple on Invested Capital (MOIC)
+Equity Value Creation
+Debt Paydown Progression
+Cash Flow Waterfalls
+Company Analytics
+EBITDA Margins
+Revenue CAGR
+Net Leverage
+Free Cash Flow Yield
+Working Capital Trends
+Architecture
+pedealdashboard/
+├── app.py                  Streamlit application
+├── dashboard/
+│   ├── analytics.py        Financial analytics engine
+│   ├── lbo_model.py        LBO calculations
+│   ├── valuation.py        DCF & comps valuation
+│   ├── portfolio.py        Portfolio tracking
+│   └── visualization.py    Charts & dashboards
+├── data/
+│   ├── uploads/            Financial uploads
+│   └── market_data/        Market datasets
+├── models/
+│   ├── forecasting.py      Revenue/EBITDA forecasts
+│   └── risk_engine.py      Scenario analysis
+├── assets/
+│   └── styles.css
+└── requirements.txt
+Example Workflow
+Upload target company financial statements
+Normalize and clean historical data
+Build acquisition capital structure
+Run LBO assumptions and debt schedule
+Analyze IRR/MOIC outputs
+Stress test operational scenarios
+Generate investment recommendation dashboard
+Long-Term Vision
 
-### 2. Ranks Investment Opportunities
-The dashboard applies a scoring system to rank companies based on their:
-- Growth potential
-- Profitability
-- Valuation attractiveness
-- Financial risk
+The goal is to create a modern private equity operating platform that combines:
 
-This mimics how investors prioritize which deals to spend time on.
+Institutional-grade financial modeling
+AI-enhanced deal analysis
+Portfolio intelligence systems
+Interactive investment research tools
+Real-time decision support infrastructure
 
----
+Designed for:
 
-### 3. Simulates a Private Equity Investment (Mini LBO)
-For each company, the tool estimates:
-- Entry value (what you pay to acquire the company)
-- Debt and equity structure
-- Future earnings growth over a holding period
-- Exit value (what the company could be worth when sold)
-
-From this, it calculates:
-- **MOIC (Multiple of Invested Capital)** – how much the investment grows
-- **IRR (Internal Rate of Return)** – the annualized return
-
----
-
-### 4. Tests Different Scenarios
-Users can adjust assumptions such as:
-- Holding period (how long the investment is held)
-- Exit valuation multiple
-- Growth expectations
-- Debt repayment
-
-This allows users to see how sensitive returns are to different conditions.
-
----
-
-### 5. Provides Clear Investment Insights
-The dashboard highlights:
-- The top-ranked investment opportunity
-- Key reasons why it stands out
-- How it compares to other companies
-
-This reflects how analysts summarize investment ideas for decision-makers.
-
----
-
-## Why This Project Matters
-
-In private equity, the challenge is not just finding companies—it’s:
-- Identifying **which ones are worth pursuing**
-- Understanding **what drives returns**
-- Evaluating **risk vs. reward**
-
-This dashboard brings those concepts together in a single, interactive tool.
-
-It demonstrates how financial data, investment logic, and decision-making can be combined into a structured workflow.
-
----
-
-## Who This Is For
-
-This tool is useful for:
-- Students learning about private equity and investing
-- Anyone interested in how deals are evaluated
-- Users who want a simplified view of financial modeling and returns
-
-No coding or technical background is required to understand or use the dashboard.
-
----
-
-## How to Run the Project
-
-1. Install required packages:
-   ```bash
+Private Equity Analysts
+Investment Banking Analysts
+Search Funds
+Independent Sponsors
+Finance Students learning deal mechanics
+Future Integrations
+Bloomberg / FactSet APIs
+AI deal sourcing engine
+PDF CIM parser
+Market sentiment engine
+Credit spread monitoring
+Real-time transaction comparables
    pip install -r requirements.txt
