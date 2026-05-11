@@ -174,6 +174,7 @@ Designed for:
 * Real-time transaction comparables
 
 Real-time transaction comparables
+ ```bash
    pip install -r requirements.txt
 '''
 '''
